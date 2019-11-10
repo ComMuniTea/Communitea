@@ -1,2 +1,2 @@
 # project5
-Basic instructions go here.
+A community app for people living in the same neighborhood to communicate with each other
