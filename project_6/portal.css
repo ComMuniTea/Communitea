@@ -1,0 +1,110 @@
+/* 5bc0de 
+.container
+.label-text*/
+
+.container {
+    background-image: linear-gradient(#8b90d0, #7dc9bd);
+    color: white;
+    padding: 15px;
+    width: 70%;
+}
+
+input[type=number], input[type=date], input[type=email] {
+    width: 20%;
+    height: 3%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=number]:focus, input[type=date]:focus, input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+    border: 0px;
+}
+
+.btn-outline-light {
+    width: 130px;
+    height: 45px;
+}
+
+.material-icons.md-48 {
+    font-size: 60px;
+}
+
+.material-icons.arrow {
+    color: white;
+    font-size: 40px;
+}
+
+.back-arrow {
+    background: none;
+    border: none;
+    padding: 0px;
+    color: white;
+    vertical-align: center;
+    height: 40px;
+}
+
+.back-arrow-text{
+    padding: 0px;
+    font-size: 10px;
+}
+
+.dotted-logo {
+    margin-right: 20px;
+    /* margin-bottom: 10px; */
+    float: right;
+    height: 80px;
+}
+
+.logo-text{
+    padding: 0px;
+    font-size: 10px;
+    text-align:center;
+    font-family: Arial Narrow, sans-serif;
+    height: 15px;
+    margin: 0px;
+    font-weight: 700;
+}
+
+.landlord-header{
+    text-align: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.landloard-text {
+    font-size: 45px;
+}
+
+.instructions{
+    text-align: left;
+    font-weight: 200;
+}
+
+.description-text {
+    width: 90%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.label-text {
+    font-weight: 400;
+}
+
+.footer-text {
+    font-weight: 500;
+}
