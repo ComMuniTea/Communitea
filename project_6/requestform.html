@@ -17,17 +17,26 @@
             <br>
             <div class="landlord-header"><h1 class="landloard-text"> Landlord Communication Form</h1></div>
             <hr>
-            <p class="instructions">Please fill in this form to ask us questions, request maintenance, or communicate an issue. <br>Don't worry, your name and account information are already linked to this form.</p>
+            <p class="instructions">Please fill in this form to ask us questions, request maintenance, or communicate an issue. All fields are required. <br>Don't worry, your name and account information are already linked to this form.</p>
             <br>
             <label for="email" class="label-text">Return Email Address:</label> <br>
             <input type="email" name="email" placeholder="Ex: tenant123@gmail.com"><br> <br>
-            <label for="unit" class="label-text">Unit Number:</label> <br>
-            <input type="number" name="unit" placeholder="Ex: 12"><br> <br>
-            <label for="type-question" class="label-text">Request Type:</label> <br>
+            <label for="unit" class="label-text">Apartment number for 1313 Ridge Ave:</label> <br>
+            <select name="unit" placeholder="Click to select">
+                <option value="12-A">12-A</option>
+                <option value="12-B">12-B</option>
+                <option value="12-C">12-C</option>
+                <option value="13-A">13-A</option>
+                <option value="13-B">13-B</option>
+                <option value="13-C">13-C</option>
+                <option value="14-A">14-A</option>
+                <option value="15-A">15-A</option>
+            </select><br><br>
+            <label for="type-question" class="label-text">Let us know which area we can help you with:</label> <br>
             <input type="radio" name="type-question"> General Question<br>
-            <input type="radio" name="type-question"> Schedule Maintenance<br>
+            <input type="radio" name="type-question"> Maintenance Request<br>
             <input type="radio" name="type-question"> Communicate Issue<br> <br>
-            <label for="date" class="label-text">If maintenance request, please select a date:</label> <br>
+            <label for="date" class="label-text">If maintenance request, please select a date using the dropdown arrow:</label> <br>
             <input type="date" name="date"> <br> <br>
             <label for="reason" class="label-text">Title of message:</label> <br>
             <input type="text" name="reason" placeholder="Ex: Dishwasher Broken"> <br> <br>
