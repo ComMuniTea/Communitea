@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Landlord Communication</title>
+    <link rel="stylesheet" type="text/css" href="portal.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</header>
+
+<body>
+    <div class="container">
+
+            <button class="back-arrow"><a href="index.html"><i class="material-icons arrow">arrow_back</i></a></button>
+
+        <div class="dotted-logo"><i class="material-icons md-48">blur_on</i>
+            <div class="logo-text">CommuniTea</div>
+    </div>
+    <form>
+
+        <br>
+        <br>
+        <div class="landlord-header">
+            <h1 class="landloard-text"> Landlord Communication Form</h1>
+        </div>
+        <hr>
+        <p class="instructions">Please fill in this form to ask us questions, request maintenance, or communicate an
+            issue. All fields are required. <br>Don't worry, your name and account information are already linked to
+            this form.</p>
+        <br>
+        <label for="email" class="label-text">Return Email Address:</label> <br>
+        <input type="email" name="email" placeholder="Ex: tenant123@gmail.com"><br> <br>
+        <label for="unit" class="label-text">Apartment number for 1313 Ridge Ave:</label> <br>
+        <select name="unit" placeholder="Click to select">
+            <option value="12-A">12-A</option>
+            <option value="12-B">12-B</option>
+            <option value="12-C">12-C</option>
+            <option value="13-A">13-A</option>
+            <option value="13-B">13-B</option>
+            <option value="13-C">13-C</option>
+            <option value="14-A">14-A</option>
+            <option value="15-A">15-A</option>
+        </select><br><br>
+        <label for="type-question" class="label-text">Let us know which area we can help you with:</label> <br>
+        <input type="radio" name="type-question"> General Question<br>
+        <input type="radio" name="type-question"> Maintenance Request<br>
+        <input type="radio" name="type-question"> Communicate Issue<br> <br>
+        <label for="date" class="label-text">If maintenance request, please select a date using the dropdown
+            arrow:</label> <br>
+        <input type="date" name="date"> <br> <br>
+        <label for="reason" class="label-text">Title of message:</label> <br>
+        <input type="text" name="reason" placeholder="Ex: Dishwasher Broken"> <br> <br>
+        <label for="description" class="label-text">Please place your message below:</label> <br>
+        <textarea name="description" cols="60" rows="10" class="description-text"></textarea><br> <br>
+
+        <p class="footer-text">Thank you for contacting us. Please submit your form below and we will get back to you
+            within 24 hours.</p>
+        <button type="submit" class="btn btn-outline-light waves-effect" onclick="submitPopup()">Submit</button>
+        <br>
+        <br>
+        </div>
+
+    </form>
+
+    <script src="../js/requestform.js"></script>
+</body>
+
+</html>
