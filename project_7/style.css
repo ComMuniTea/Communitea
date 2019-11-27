@@ -12,7 +12,7 @@
 
 .visible{
     float: right;
-    padding-right: 45%;
+    padding-right: 35%;
 }
 
 input[type=number], input[type=date], input[type=email] {
@@ -177,7 +177,7 @@ select {
 }
 
 .profile-picture{
-    width: 30%;
+    width: 25%;
 }
 
 .profile-item{

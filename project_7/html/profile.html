@@ -35,27 +35,19 @@
                     <label for="fileElem" class="upload-button btn btn-outline-light waves-effect">Upload Media</label>
                     <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
                     <button class="btn btn-outline-light waves-effect" id='remove' onclick="deleteFiles()"
-                        disabled>Remove All</button>
+                        disabled>Remove</button>
                     <div id="gallery" />
             </div>
         </form>
     </div>
     <label for="name" class="label-text">Name: *</label> <br>
-    <input type="text" name="name" placeholder="Jane Doe"> <br> <br>
+    <input type="text" name="name" placeholder="Name"> <br> <br>
 
     <label for="email" class="label-text">Email Address: * </label><br>
     <input type="email" name="email" placeholder="Ex: tenant123@gmail.com">
-    <div class="visible">
-        <input type="checkbox" name="type-question">
-        Visible<br>
-    </div>
     <br><br>
     <label for="phone" class="label-text">Phone Number: </label><br>
     <input type="text" name="phone" placeholder="(xxx)-xxx-xxxx">
-    <div class="visible">
-        <input type="checkbox" name="type-question">
-        Visible<br>
-    </div>
     <br>
     <br>
     <label for="building" class="label-text">Apartment Building: *</label> <br>
@@ -63,10 +55,7 @@
         <option value="1711">1711 Ridge Ave</option>
         <option value="1712">1712 Ridge Ave</option>
     </select>
-    <div class="visible">
-        <input type="checkbox" name="type-question">
-        Visible<br>
-    </div><br><br>
+    <br><br>
 
 
     <label for="unit" class="label-text">Apartment number for 1313 Ridge Ave: *</label> <br>
@@ -79,12 +68,8 @@
         <option value="13-C">13-C</option>
         <option value="14-A">14-A</option>
         <option value="15-A">15-A</option>
-    </select>
-    <div class="visible">
-        <input type="checkbox" name="type-question">
-        Visible<br>
-    </div><br><br>
-    <label for="intro" class="label-text">Title of message:</label> <br>
+    </select><br><br>
+    <label for="intro" class="label-text">Introduction:</label> <br>
     <textarea name="intro" cols="60" rows="10" placeholder="Write something to introduce yourself..."></textarea> <br>
     <br>
 
