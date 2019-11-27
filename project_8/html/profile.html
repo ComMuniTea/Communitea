@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Personal Profile</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../js/profile.js"></script>
+</header>
+
+
+<body>
+    <div class="container">
+        <button class="back-arrow">
+            <a href="index.html" title="go back to home page"><i class="material-icons arrow">arrow_back</i></a>
+        </button>
+        <div class="dotted-logo"><i class="material-icons md-48">blur_on</i>
+            <div class="logo-text">CommuniTea</div>
+        </div>
+
+        <form>
+            <br>
+            <br>
+            <div class="landlord-header">
+                <h1 class="landloard-text"> Personal Profile</h1>
+            </div>
+            <div class="instructions">Welcome to CommuniTea! Here you can create a profile for the property management and other tenants to get to know you.
+                Fields with (*) are required to verify your residency. All other fields are a way for you to introduce yourself to the community!
+            </div>
+
+            <div id="drop-area">
+                <form class="my-form">
+                    <p>Upload Profile Picture</p>
+                    <label for="fileElem" class="upload-button btn btn-outline-light waves-effect">Upload Media</label>
+                    <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                    <button class="btn btn-outline-light waves-effect" id='remove' onclick="deleteFiles()"
+                        disabled>Remove</button>
+                    <div id="gallery" />
+            </div>
+        </form>
+    </div>
+    <label for="name" class="label-text">Name: *</label> <br>
+    <input type="text" name="name" placeholder="Name"> <br> <br>
+
+    <label for="email" class="label-text">Email Address: * </label><br>
+    <input type="email" name="email" placeholder="Ex: tenant123@gmail.com">
+    <br><br>
+    <label for="phone" class="label-text">Phone Number: </label><br>
+    <input type="text" name="phone" placeholder="(xxx)-xxx-xxxx">
+    <br>
+    <br>
+    <label for="building" class="label-text">Apartment Building: *</label> <br>
+    <select name="building" placeholder="Click to select">
+        <option value="1711">1711 Ridge Ave</option>
+        <option value="1712">1712 Ridge Ave</option>
+    </select>
+    <br><br>
+
+
+    <label for="unit" class="label-text">Apartment number for 1313 Ridge Ave: *</label> <br>
+    <select name="unit" placeholder="Click to select">
+        <option value="12-A">12-A</option>
+        <option value="12-B">12-B</option>
+        <option value="12-C">12-C</option>
+        <option value="13-A">13-A</option>
+        <option value="13-B">13-B</option>
+        <option value="13-C">13-C</option>
+        <option value="14-A">14-A</option>
+        <option value="15-A">15-A</option>
+    </select><br><br>
+    <label for="intro" class="label-text">Introduction:</label> <br>
+    <textarea name="intro" cols="60" rows="10" placeholder="Write something to introduce yourself..."></textarea> <br>
+    <br>
+
+
+
+    </form>
+    <p class="footer-text">Thank you for registering with us! Hit "Sumbit" to confirm your profile</p>
+        <button type="submit" class="btn btn-outline-light waves-effect" onclick="submitChange()">Submit</button>
+
+</body>

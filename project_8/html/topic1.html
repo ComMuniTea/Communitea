@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Landlord Communication</title>
+    <link rel="stylesheet" type="text/css" href="../forum.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../js/profile.js"></script>
+</header>
+
+<body>
+    <div class="container">
+        <a href="forum.html"><i class="material-icons arrow">arrow_back</i></a>
+        <div class="dotted-logo"><i class="material-icons md-48">blur_on</i>
+            <div class="logo-text">CommuniTea</div>
+        </div>
+        
+        
+        <br>
+        <br>
+        <h1> Help someone stole my bike!! </h1>
+        <hr>
+
+        <div class = "clearfix">
+            <div class = "wrapper">
+                <a href = 'profile_1.html'>  
+                    <img class = "art" src = "../asset/avatar.png">
+                    <p class =  "name">
+                        BikerWithNoBike
+                    </p>
+                </a>
+                <hr>
+            </div>
+
+            <div class = "wrapper-right">
+                <img class = "art-pic" src = "../asset/bike.jpeg">
+                <p class = "text">
+                    I parked my bike on the stage of tech auditorium.
+                    But I can't find it any more. 
+                    HELP!!
+                </p>
+                <hr>
+            </div>
+
+            <div class = "wrapper">
+                <a href = 'profile_2.html'>  
+                    <img class = "art" src = "../asset/avatar2.png">
+                    <p class =  "name">
+                        BikerWithABike
+                    </p>
+                </a>
+                <hr>
+            </div>
+
+            <div class = "wrapper-right">
+                <img class = "art-pic" src = "../asset/bike.jpeg">
+                <p class = "text">
+                    You can use my bike if you want. Our bikes look exactly the same!
+                </p>
+                <hr>
+            </div>
+        </div>
+        
+        <form>
+            <br>
+            <label for="description" class="label-text">Post your comment!</label> <br>
+            <textarea name="description" cols="60" rows="10" class="description-text"></textarea><br> <br>
+            <div id="drop-area">
+                <form class="my-form">
+                    <p>Upload Profile Picture</p>
+                    <label for="fileElem" class="upload-button btn btn-outline-light waves-effect">Upload Media</label>
+                    <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                    <button class="btn btn-outline-light waves-effect" id='remove' onclick="deleteFiles()"
+                        disabled>Remove</button>
+                    <div id="gallery" />
+            </div>
+            <button type="submit" class="btn btn-outline-light waves-effect" onclick="submitPopup()">Submit</button>
+            <hr> 
+        </form>
+    </div>
+</body>

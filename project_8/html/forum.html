@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Landlord Communication</title>
+    <link rel="stylesheet" type="text/css" href="../forum.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../js/profile.js"></script>
+    </header>
+
+<body>
+    <div class="container">
+
+        <a href="index.html"><i class="material-icons arrow">arrow_back</i></a>
+
+    <div class="dotted-logo"><i class="material-icons md-48">blur_on</i>
+        <div class="logo-text">CommuniTea</div>
+    </div>
+    <form>
+        <br>
+        <br>
+        <h1> Community Forum </h1>
+        <hr>
+        <div>
+            <a href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike! </h3> </a>
+        </div>
+        <hr>
+        <div>
+            <a href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike!! Again!</h3> </a>
+        </div>
+        <hr>
+        <div>
+            <a href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike!!! Again!! </h3> </a>
+        </div>
+        <hr>
+        <label class="label-text">Write Your Own Post!</label> <br>
+        <textarea name="description" cols="60" rows="10" class="description-text"></textarea><br> <br>
+        <div id="drop-area">
+            <form class="my-form">
+                <p>Upload Profile Picture</p>
+                <label for="fileElem" class="upload-button btn btn-outline-light waves-effect">Upload Media</label>
+                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                <button class="btn btn-outline-light waves-effect" id='remove' onclick="deleteFiles()"
+                    disabled>Remove</button>
+                <div id="gallery" />
+        </div>
+        <button type="submit" class="btn btn-outline-light waves-effect" onclick="submitPopup()">Submit</button>
+        <hr>
+    </form>
+</body>
