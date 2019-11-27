@@ -162,6 +162,10 @@
     vertical-align: middle;
 }
 
+#fileElem{
+    display:none;
+}
+
 .upload-button{
     margin-bottom: 0;
     display: table-cell;

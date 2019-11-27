@@ -38,5 +38,5 @@ function submitChange(){
 }
 
 submitPopup = () => {
-  alert("Thanks for submitting your message!")
+  alert("Posted a Message! Points + 1")
 }

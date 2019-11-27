@@ -25,7 +25,7 @@
         <div class = "clearfix">
             <div class = "wrapper">
                 <a href = 'profile_1.html'>  
-                    <img class = "art" src = "../asset/avatar.png">
+                    <img alt = "an avatar" class = "art" src = "../asset/avatar.png">
                     <p class =  "name">
                         BikerWithNoBike
                     </p>
@@ -34,7 +34,7 @@
             </div>
 
             <div class = "wrapper-right">
-                <img class = "art-pic" src = "../asset/bike.jpeg">
+                <img alt = "a bike" class = "art-pic" src = "../asset/bike.jpeg">
                 <p class = "text">
                     I parked my bike on the stage of tech auditorium.
                     But I can't find it any more. 
@@ -45,7 +45,7 @@
 
             <div class = "wrapper">
                 <a href = 'profile_2.html'>  
-                    <img class = "art" src = "../asset/avatar2.png">
+                    <img alt = "an avatar" class = "art" src = "../asset/avatar2.png">
                     <p class =  "name">
                         BikerWithABike
                     </p>
@@ -54,7 +54,7 @@
             </div>
 
             <div class = "wrapper-right">
-                <img class = "art-pic" src = "../asset/bike.jpeg">
+                <img alt = "a bike" class = "art-pic" src = "../asset/bike.jpeg">
                 <p class = "text">
                     You can use my bike if you want. Our bikes look exactly the same!
                 </p>
@@ -64,16 +64,17 @@
         
         <form>
             <br>
-            <label for="description" class="label-text">Post your comment!</label> <br>
+            <label class="label-text">Post your comment!</label> <br>
             <textarea name="description" cols="60" rows="10" class="description-text"></textarea><br> <br>
             <div id="drop-area">
                 <form class="my-form">
                     <p>Upload Profile Picture</p>
-                    <label for="fileElem" class="upload-button btn btn-outline-light waves-effect">Upload Media</label>
+                    <label  class="upload-button btn btn-outline-light waves-effect">Upload Media</label>
                     <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
                     <button class="btn btn-outline-light waves-effect" id='remove' onclick="deleteFiles()"
                         disabled>Remove</button>
                     <div id="gallery" />
+                </form>
             </div>
             <button type="submit" class="btn btn-outline-light waves-effect" onclick="submitPopup()">Submit</button>
             <hr> 
