@@ -22,30 +22,41 @@
         <br>
         <h1> Community Forum </h1>
         <hr>
-        <div>
-            <a href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike! </h3> </a>
+        <div class = 'topic-wrapper'>
+            <a class = 'left' href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike! </h3> </a>
+            <p class = 'right'> 12/30/19</p>
+            <div class = 'clear'></div> 
         </div>
         <hr>
-        <div>
-            <a href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike!! Again!</h3> </a>
-        </div>
+        <div class = 'topic-wrapper'>
+                <a class = 'left' href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike!! Again!</h3> </a>
+                <p class = 'right'> 12/31/19</p>
+                <div class = 'clear'></div> 
+            </div>
         <hr>
-        <div>
-            <a href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike!!! Again!! </h3> </a>
-        </div>
+        <div class = 'topic-wrapper'>
+                <a class = 'left' href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike!!! Again!! </h3> </a>
+                <p class = 'right'> 12/32/19</p>
+                <div class = 'clear'></div> 
+            </div>
         <hr>
         <label class="label-text">Write Your Own Post!</label> <br>
-        <textarea name="description" cols="60" rows="10" class="description-text"></textarea><br> <br>
-        <div id="drop-area">
-            <form class="my-form">
+        <textarea name="description" cols="60" rows="10" placeholder = 'make a new post here!' class="description-text"></textarea><br> <br>
+
+        <div class = 'topic-wrapper'>
+            <div id="drop-area">
                 <p>Upload Profile Picture</p>
                 <label for="fileElem" class="upload-button btn btn-outline-light waves-effect">Upload Media</label>
                 <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
                 <button class="btn btn-outline-light waves-effect" id='remove' onclick="deleteFiles()"
                     disabled>Remove</button>
-                <div id="gallery" />
+                <div id="gallery"></div>
+            </div>
+            <div class = 'drop-area-right'>
+                <button type="submit" class="btn btn-outline-light waves-effect" onclick="submitPopup()"><h2>Submit </h2></button>
+            </div>
+            <div class = 'clear'> </div>
         </div>
-        <button type="submit" class="btn btn-outline-light waves-effect" onclick="submitPopup()">Submit</button>
-        <hr>
     </form>
+    
 </body>

@@ -137,6 +137,7 @@
 }
 
 #drop-area {
+    float:left;
     border: 2px dashed #ccc;
     border-radius: 20px;
     width: 400px;
@@ -146,6 +147,16 @@
 }
 #drop-area.highlight {
     border-color: purple;
+}
+
+.drop-area-right {
+    float:left;
+    margin-left: 50px;
+    height: 130px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .my-form {
@@ -170,4 +181,18 @@
     margin-bottom: 0;
     display: table-cell;
     vertical-align: middle;
+}
+
+.topic-wrapper{
+    width:100%;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+    margin-right: 15px;
+}
+.clear{
+    clear:both;
 }

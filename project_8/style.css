@@ -188,3 +188,48 @@ select {
 .profile-introduction{
     width:40%;
 }
+
+.index-logo{
+    height: 80px;
+    width: 100%;
+}
+
+.index-logo-text{
+    text-align: center;
+}
+
+.button-wrapper{
+    width: 100%;
+    height: 100px;
+}
+
+.request-form{
+    float:left;
+    margin-left: 35%;
+}
+
+.community-forum{
+    float: right;
+    margin-right: 35%;
+}
+.clear{
+    clear:both;
+}
+
+.sonnet{
+    height: 600px;
+    width: 400px;
+    position: fixed;
+    top: 35%;
+    left:50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+.sonnet-text{
+    text-align: center;
+}
+
+.place-holder{
+    height: 50px;
+}
