@@ -1,5 +1,5 @@
-function login(){
-    username = document.getElementById("username").value
+function navProfile(){
+    username = window.localStorage.getItem('username')
     if (username == "user1"){
         document.location.href = "./profile_1.html";
     }
@@ -8,6 +8,12 @@ function login(){
     }
 
   }
+
+const real_login = () => {
+  username = document.getElementById("username").value
+  window.localStorage.setItem('username', username)
+  document.location.href = './index.html'
+}
 
 function register(){
     document.location.href = "./profile.html";
