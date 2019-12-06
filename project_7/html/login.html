@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../js/login.js"></script>
+</header>
+
+
+<body>
+    <div class="container">
+        <button class="back-arrow">
+            <a href="index.html" title="go back to home page"><i class="material-icons arrow">arrow_back</i></a>
+        </button>
+        <div class="dotted-logo"><i class="material-icons md-48">blur_on</i>
+            <div class="logo-text">CommuniTea</div>
+        </div>
+        <h1 class="login-header">Login to CommuniTea</h1>
+        <br>
+        <br>
+        <form class="login">
+            <div>
+                <label for="username" class="login-label">Username/Email</label> <br>
+                <input type="text" name="username" class="login-label" id="username"> <br> <br>
+            </div>
+            <div>
+                <label for="password" class="login-label">Password</label> <br>
+                <input type="password" name="password" id="password" class="login-label"> <br> <br>
+            </div>
+
+            <input type="checkbox" name="show_password" onclick="showPassword()">
+            <label for="show_password">Show Password</label>
+
+
+            <button class="btn btn-outline-light waves-effect" type="button" onclick="login()">
+                Login
+            </button>
+
+
+            <br>
+
+            <a href="./profile.html" title="register new profile">
+                Don't have a profile? Register
+            </a>
+
+        </form>
+
+</body>

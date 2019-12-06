@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Landlord Communication</title>
+    <link rel="stylesheet" type="text/css" href="../forum.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../js/forum.js"></script>
+    </header>
+
+<body>
+    <div class="container">
+
+        <a href="index.html"><i class="material-icons arrow">arrow_back</i></a>
+
+    <div class="dotted-logo"><i class="material-icons md-48">blur_on</i>
+        <div class="logo-text">CommuniTea</div>
+    </div>
+    <form>
+        <br>
+        <br>
+        <h1> Community Forum </h1>
+        <hr>
+        <div class = 'topic-wrapper'>
+            <a class = 'left' href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike! </h3> </a>
+            <p class = 'right'> 12/30/19</p>
+            <div class = 'clear'></div> 
+        </div>
+        <hr>
+        <div class = 'topic-wrapper'>
+                <a class = 'left' href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike!! Again!</h3> </a>
+                <p class = 'right'> 12/31/19</p>
+                <div class = 'clear'></div> 
+            </div>
+        <hr>
+        <div class = 'topic-wrapper'>
+                <a class = 'left' href = "topic1.html"> <h3 class = 'topic-font'> Help someone stole my bike!!! Again!! </h3> </a>
+                <p class = 'right'> 12/32/19</p>
+                <div class = 'clear'></div> 
+            </div>
+        <hr>
+        <label class="label-text">Write Your Own Post!</label> <br>
+        <textarea name="description" cols="60" rows="10" placeholder = 'make a new post here!' class="description-text"></textarea><br> <br>
+
+        <div class = 'topic-wrapper'>
+            <div id="drop-area">
+                <p>Upload Profile Picture</p>
+                <label for="fileElem" class="upload-button btn btn-outline-light waves-effect">Upload Media</label>
+                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                <button class="btn btn-outline-light waves-effect" id='remove' onclick="deleteFiles()"
+                    disabled>Remove</button>
+                <div id="gallery"></div>
+            </div>
+            <div class = 'drop-area-right'>
+                <button type="submit" class="btn btn-outline-light waves-effect" onclick="submitPopup()"><h2>Submit </h2></button>
+            </div>
+            <div class = 'clear'> </div>
+        </div>
+    </form>
+    
+</body>
