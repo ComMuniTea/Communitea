@@ -10,7 +10,7 @@ function navProfile(){
   }
 
 const real_login = () => {
-  username = document.getElementById("username").value
+  const username = document.getElementById("username").value
   window.localStorage.setItem('username', username)
   document.location.href = './index.html'
 }
@@ -27,3 +27,8 @@ function showPassword() {
       x.type = "password";
     }
   }
+
+const showPoints = () => {
+  const x = 
+
+}
