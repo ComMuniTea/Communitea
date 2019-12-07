@@ -29,6 +29,6 @@ function showPassword() {
   }
 
 const showPoints = () => {
-  const x = 
-
+  const points = window.localStorage.getItem('points') || 0
+  document.write(points)
 }
